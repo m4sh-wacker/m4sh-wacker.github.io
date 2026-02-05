@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammad Hosein Sadeghian - InfoSec Resume</title>
+    <link rel="icon" href="/assets/logo.jpg"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* --- CSS Variables (GitHub Dark Theme) --- */
         :root {
             --primary-bg-color: #0d1117;
             --secondary-bg-color: #161b22;
@@ -24,7 +25,6 @@
             --purple-color: #a371f7;
         }
 
-        /* --- Global Styles --- */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
 
@@ -40,7 +40,6 @@
         a { text-decoration: none; color: var(--accent-color); transition: color 0.3s; }
         a:hover { color: var(--accent-hover-color); text-decoration: underline; }
 
-        /* Custom Utilities */
         .text-blue-400 { color: #60a5fa !important; }
         .hover\:text-blue-300:hover { color: #93c5fd !important; }
         .transition-colors { transition: color 0.3s ease; }
@@ -48,7 +47,6 @@
         .mb-2 { margin-bottom: 0.5rem; }
         .mb-4 { margin-bottom: 1rem; }
 
-        /* --- Hero Section --- */
         .hero {
             text-align: center;
             padding: 80px 20px 60px;
@@ -64,12 +62,6 @@
             margin-bottom: 20px;
             object-fit: cover;
             background-color: var(--card-bg-color);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: var(--secondary-text-color);
-            font-weight: bold;
         }
 
         .hero h1 {
@@ -107,7 +99,6 @@
         .social-links a { font-size: 1.5rem; color: var(--secondary-text-color); transition: 0.3s; }
         .social-links a:hover { color: var(--accent-color); transform: translateY(-3px); }
 
-        /* --- ROADMAP BUTTON --- */
         .roadmap-btn {
             display: inline-flex;
             align-items: center;
@@ -130,7 +121,6 @@
         }
         .roadmap-btn i { font-size: 1.2rem; }
 
-        /* --- Sections --- */
         .section-title {
             text-align: center;
             font-size: 2rem;
@@ -144,7 +134,6 @@
             font-weight: 700;
         }
 
-        /* --- Bio Card --- */
         .bio-card {
             background-color: var(--card-bg-color);
             border: 1px solid var(--border-color);
@@ -154,7 +143,6 @@
             border-left: 4px solid var(--purple-color);
         }
 
-        /* --- Timeline (Experience) --- */
         .timeline { position: relative; padding: 20px 0; }
         .timeline::before {
             content: ''; position: absolute; left: 0; top: 0; bottom: 0;
@@ -181,7 +169,6 @@
         .job-company { color: var(--primary-text-color); font-weight: bold; }
         .job-date { color: var(--secondary-text-color); font-size: 0.85rem; margin-bottom: 10px; display: block; }
 
-        /* --- Skills (Progress Bars) --- */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -199,14 +186,13 @@
             height: 100%;
             border-radius: 5px;
             background: var(--success-color);
-            width: 0; /* Animated later */
+            width: 0; 
             transition: width 1s ease-out;
         }
         .fill-100 { width: 100%; background: var(--success-color); }
         .fill-80 { width: 80%; background: var(--accent-color); }
         .fill-60 { width: 60%; background: var(--highlight-color); }
 
-        /* --- Card Grid (Projects/Certs) --- */
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -228,7 +214,6 @@
         .card h3 { color: var(--accent-color); margin-bottom: 10px; }
         .card-subtitle { color: var(--secondary-text-color); font-size: 0.9rem; margin-bottom: 10px; font-weight: 600; }
 
-        /* Certificate Link Styles */
         .cert-link {
             display: flex;
             align-items: center;
@@ -242,7 +227,6 @@
         .cert-link:hover { color: var(--accent-color); padding-right: 5px; }
         .cert-link i { min-width: 20px; }
 
-        /* --- Badges --- */
         .badge {
             padding: 4px 8px;
             border-radius: 4px;
@@ -254,7 +238,6 @@
         .badge-red { background: rgba(248, 81, 73, 0.2); color: #ff7b72; border: 1px solid rgba(248, 81, 73, 0.4); }
         .badge-gold { background: rgba(210, 153, 34, 0.2); color: #d29922; border: 1px solid rgba(210, 153, 34, 0.4); }
 
-        /* --- Footer --- */
         footer {
             text-align: center;
             padding: 40px;
@@ -274,13 +257,12 @@
 
     <header class="hero">
         <div class="container">
-            <div class="profile-img">M</div>
+            <img src="/assets/logo.jpg" alt="Mohammad Hosein Sadeghian" class="profile-img">
             
             <h1>Mohammad Hosein Sadeghian</h1>
             <h2>Information Security Specialist | Bug Hunter | Red Teamer</h2>
             
             <div class="contact-info">
-                <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Yazd, Iran</div>
                 <div class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:m4sh.wacker@gmail.com">m4sh.wacker@gmail.com</a></div>
                 <div class="contact-item"><i class="fas fa-phone"></i> (+1) 724 241 8830</div>
                 <div class="contact-item"><i class="fas fa-globe"></i> <a href="http://m4sh.ir" target="_blank">m4sh.ir</a></div>
@@ -293,6 +275,9 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
 
+            <a href="http://m4sh.ir/roadmap/" class="roadmap-btn">
+                <i class="fas fa-map-signs"></i> View My Roadmap
+            </a>
         </div>
     </header>
 
